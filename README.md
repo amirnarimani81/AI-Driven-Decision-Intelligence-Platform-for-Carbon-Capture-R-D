@@ -58,7 +58,7 @@ LLM reasoning, and multi-agent AI to accelerate carbon capture R&D process.
 <p>
 The platform transforms fragmented experimental data, scientific literature, and ML predictions
 into actionable engineering insights for material discovery, process optimization, anomaly detection,
-performance improvement, and next-best experiment recommendations (DOE).
+performance improvement, and next-best experiment recommendations (DOE) .
 </p>
 
 <h3>2.Key Engineering Questions</h3>
@@ -87,45 +87,62 @@ performance improvement, and next-best experiment recommendations (DOE).
     </li>
 </ul>
 
-<h2>3. What the Platform Does</h2>
+<h3>3. Why This Platform Matters for R&D Process </h3>
+
+<p>
+Chemical engineers are trained to solve complex scientific and industrial problems—not spend the majority of their time managing fragmented data, searching literature, or performing repetitive analysis. 
+This AI-driven decision intelligence platform transforms experimental data, scientific knowledge, and engineering models into actionable insights to accelerate carbon capture R&D.
+</p>
 
 <ul>
-    <li>
-        <strong>Engineering Data Intelligence:</strong>
-        Builds ETL pipelines and structured databases to collect, clean, validate, and organize experimental data for analysis and AI modeling.
-    </li>
-    <li>
-        <strong>Interactive Data Management:</strong>
-        Connects Streamlit with a SQLite database to retrieve experimental datasets, collect new user inputs, and automatically store new experimental results for continuous dataset expansion.
-    </li>
-    <li>
-        <strong>Machine Learning Prediction:</strong>
-        Develops predictive models to estimate CO₂ uptake performance based on material properties and process parameters.
-    </li>
-    <li>
-        <strong>Process Optimization & Scale-Up Assessment:</strong>
-        Applies Bayesian optimization, sensitivity analysis, and uncertainty evaluation to identify optimal operating conditions and support preliminary industrial scale-up assessment.
-    </li>
-    <li>
-        <strong>ChemInsight AI (RAG Scientific Assistant):</strong>
-        Retrieves knowledge from scientific papers, SOPs, and technical documents, connecting literature insights with experimental data and engineering analysis.
-    </li>
-    <li>
-        <strong>LLM Engineering Interpretation:</strong>
-        Generates explainable engineering reports by interpreting ML predictions, optimization results, uncertainty analysis, and experimental trends.
-    </li>
-    <li>
-        <strong>AI Engineering Chatbot:</strong>
-        Provides a conversational interface to answer technical questions about the project, explain model performance, analyze improvement opportunities, and provide engineering recommendations.
-    </li>
-    <li>
-        <strong>Multi-Agent AI Decision Intelligence:</strong>
-        Integrates specialized AI agents to combine data analysis, scientific knowledge, optimization results, and engineering reasoning for improved R&amp;D decision support.
-    </li>
+
+  <li>
+    <strong>Accelerates Carbon Capture Material Discovery:</strong>
+    Machine learning models identify relationships between material properties 
+    (surface area, pore volume, pore structure, and chemical characteristics) and CO₂ adsorption performance, reducing experimental trial-and-error and enabling faster identification of high-performance materials.
+  </li>
+
+  <li>
+    <strong>Optimizes Process Conditions with AI:</strong>
+    Bayesian optimization and engineering analysis identify optimal operating conditions 
+    such as temperature, pressure, and flow parameters to improve CO₂ capture efficiency while reducing experimental costs.
+  </li>
+
+  <li>
+    <strong>Transforms Experimental Data into Engineering Knowledge:</strong>
+    Automated ETL pipelines, structured databases, and interactive dashboards convert scattered laboratory data into reliable datasets that researchers can continuously analyze and expand.
+  </li>
+
+  <li>
+    <strong>Provides Explainable AI-Based Engineering Decisions:</strong>
+    LLM reasoning, feature importance analysis, and uncertainty evaluation explain model predictions and reveal the key factors controlling material and process performance.
+  </li>
+
+  <li>
+    <strong>Connects Scientific Literature with Experimental Research:</strong>
+    ChemInsight AI (RAG-based scientific assistant) retrieves knowledge from research papers, technical reports, and SOPs, allowing engineers to integrate existing scientific discoveries with their own experimental results.
+  </li>
+
+  <li>
+    <strong>Reduces Experimental Time and Resources:</strong>
+    AI-guided Design of Experiments (DOE) identifies high-value experiments before laboratory testing, minimizing unnecessary trials, material consumption, and development costs.
+  </li>
+
+  <li>
+    <strong>Bridges Laboratory Research and Industrial Scale-Up:</strong>
+    By combining experimental data, machine learning, optimization algorithms, and engineering models, the platform supports the transition from material discovery to practical carbon capture process development.
+  </li>
+
+  <li>
+    <strong>Creates an Intelligent Engineering Assistant:</strong>
+    Multi-agent AI systems collaborate as a virtual engineering team, combining data analysis, scientific knowledge, optimization, and process reasoning to support faster and more informed R&D decisions.
+  </li>
+
 </ul>
 
-<p align="center">
-    <img src="images/8.png" width="900" alt="Platform overview">
+<p>
+<strong>Overall Impact:</strong>  
+This platform enables chemical engineers and researchers to move from data-intensive workflows toward AI-assisted engineering innovation—accelerating R&D cycles, improving decision confidence, reducing experimental costs, and supporting the development of scalable carbon capture technologies.
 </p>
 
 <h2>4. Deployment & Interactive Streamlit Application</h2>
@@ -1000,9 +1017,9 @@ The multi-agent architecture solves this challenge by assigning different engine
 specialized AI agents and combining their outputs into a final decision workflow.
 </p>
 
+<h2> Multi-Agent Architecture</h2>
 
-<pre)
-<h2>Multi-Agent Architecture</h2>
+<pre>
                                   USER
                                     │
                                     ▼
@@ -1048,6 +1065,7 @@ Dataset XGBoost  Optimization  Simulation  Vector DB    Storage
                          ▼
       PDF Report + Dashboard + Chat Response
 </pre>
+
 
 <h2>AI-Driven Experimental Design and Optimization</h2>
 
