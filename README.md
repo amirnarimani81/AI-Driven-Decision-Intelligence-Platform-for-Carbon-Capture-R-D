@@ -1085,94 +1085,119 @@ Dataset XGBoost  Optimization  Simulation  Vector DB    Storage
 </pre>
 
 
-<h2>AI-Driven Experimental Design and Optimization</h2>
-
-<p>
-The platform enables a transition from traditional trial-and-error experimentation to
-<strong>AI-guided experimental strategy</strong>.
-</p>
-
-<p>
-The DOE agent recommends experiments by considering:
-</p>
-
-<ul>
-    <li>Prediction uncertainty</li>
-    <li>Optimal operating regions</li>
-    <li>Material properties</li>
-    <li>Scientific mechanisms</li>
-    <li>Industrial constraints</li>
-</ul>
-
-<h3>Chemical Engineering AI Agent Implementation</h3>
-
+<h3> For Example: Chemical Engineering AI Agent Implementation</h3>
 <pre>
 <code>
-CHEMICAL_ENGINEERING_PROMPT = """
+# Engineering Tools Available to the Agent
+tools = [
+  ML_Prediction_Tool(
+        description=
+        "Predict CO₂ uptake performance using trained machine learning models"),
 
-You are a Senior Chemical Engineering AI Agent
-specialized in CO₂ capture.
+    Optimization_Tool(
+        description=
+        "Identify optimal temperature, pressure, and process conditions using Bayesian optimization"),
 
-Expertise:
+    Data_Analysis_Tool(
+        description=
+        "Analyze experimental datasets, trends, correlations, and anomalies"),
+
+    RAG_Literature_Tool(
+        description=
+        "Retrieve scientific information from CO₂ capture papers and technical documents"),
+
+# Chemical Engineering Agent Prompt
+
+CHEMICAL_ENGINEERING_AGENT_PROMPT = """
+
+You are a Senior Chemical Engineering AI Agent specialized in
+CO₂ capture and adsorption process development.
+
+Your expertise includes:
 - Adsorption thermodynamics and kinetics
-- CO₂ capture materials
-- Reactor design
+- Porous material characterization
+- CO₂ capture process design
+- Machine learning interpretation
 - Process optimization
-- Scale-up assessment
+- Industrial scale-up evaluation
 
-Capabilities:
-- Analyze experimental data
-- Interpret ML predictions
-- Recommend optimal conditions
-- Explain engineering mechanisms
+Your responsibilities:
+
+1. Analyze experimental datasets and identify important trends.
+2. Interpret ML model predictions and explain performance drivers.
+3. Retrieve scientific knowledge when additional information is required.
+4. Recommend optimal operating conditions.
+5. Suggest next experiments using DOE principles.
+6. Provide engineering justification for every recommendation.
 
 Rules:
-- Use chemical engineering principles
-- Provide quantitative recommendations
-- Suggest experiments when required
+- Use chemical engineering principles.
+- Avoid unsupported assumptions.
+- Provide quantitative recommendations when possible.
+- Explain the reason behind each decision.
 
 """
+# Create ReAct Agent using LangChain
 
 agent = create_react_agent(
-    llm,
-    tools,
-    prompt=CHEMICAL_ENGINEERING_PROMPT)
+    llm=llm,
+    tools=tools,
+    prompt=CHEMICAL_ENGINEERING_AGENT_PROMPT)
+
+agent_executor = AgentExecutor(
+    agent=agent,
+    tools=tools,
+    verbose=True)
+
+# User Engineering Question
 
 result = agent_executor.invoke({
-    "input": engineering_question})
+"input":
+"""
+A new porous material shows high surface area but moderate CO₂ uptake.
+Analyze possible reasons and recommend the next experiments.
+"""})
 </code>
 </pre>
 
-<h3>AI-Driven DOE Experiment Recommendation</h3>
+
+<h3> For example: AI-Driven DOE Experiment Recommendation Agent</h3>
 
 <pre>
 <code>
-def next_experiment_suggestion(
-        decision_data,
-        optimal_conditions):
+DOE_AGENT_PROMPT = """
+You are an AI Experimental Design Agent for carbon capture R&D.
 
-    prompt = f"""
+Objective:
+Design the next optimal experiments to improve CO₂ adsorption performance.
 
-    Design next CO₂ capture experiments based on:
+Consider:
+- ML prediction results
+- Prediction uncertainty
+- Material properties
+- Operating conditions
+- Thermodynamic mechanisms
+- Experimental limitations
 
-    - ML predictions
-    - Optimization results
-    - Uncertainty analysis
-    - Engineering constraints
+Generate recommendations including:
 
-    Include:
+1. Proposed experimental conditions
+2. Variables to modify
+3. Expected CO₂ uptake improvement
+4. Scientific justification
+5. Risk and uncertainty evaluation
 
-    - Condition refinement
-    - Robustness testing
-    - Material exploration
-    - Expected performance
-    - Engineering justification
+"""
+DOE_agent = create_react_agent(
+    llm,
+    tools=[
+        ML_Prediction_Tool,
+        Optimization_Tool,
+        Uncertainty_Analysis_Tool,
+        RAG_Literature_Tool],
+    prompt=DOE_AGENT_PROMPT)
 
-    """
-
-    response = llm.generate(prompt)
-
-    return response
+DOE_result = DOE_agent.invoke({input})
 </code>
 </pre>
 
