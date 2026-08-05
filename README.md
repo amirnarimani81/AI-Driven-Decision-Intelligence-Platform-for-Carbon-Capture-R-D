@@ -1101,8 +1101,7 @@ tools = [
         "Analyze experimental trends and detect anomalies"),
 
     RAG_Literature_Tool(
-        "Retrieve CO₂ capture knowledge from scientific documents")
-]
+        "Retrieve CO₂ capture knowledge from scientific documents")]
 
 
 # Chemical Engineering Agent Prompt
@@ -1124,31 +1123,20 @@ Rules:
 - Explain engineering reasoning
 
 """
-
-
 # ReAct LangChain Agent
 
-agent = create_react_agent(
-    llm,
-    tools,
-    prompt=CHEMICAL_ENGINEERING_AGENT_PROMPT
-)
+agent = create_react_agent( llm,tools,
+    prompt=CHEMICAL_ENGINEERING_AGENT_PROMPT)
 
 agent_executor = AgentExecutor(
     agent=agent,
-    tools=tools
-)
-
+    tools=tools)
 
 # Engineering Query
-
 result = agent_executor.invoke({
 "input":
-"""
-A porous material shows high surface area but moderate CO₂ uptake.
-Analyze possible causes and recommend next experiments.
-"""
-})
+"""A porous material shows high surface area but moderate CO₂ uptake.
+Analyze possible causes and recommend next experiments."""})
 </code>
 </pre>
 
