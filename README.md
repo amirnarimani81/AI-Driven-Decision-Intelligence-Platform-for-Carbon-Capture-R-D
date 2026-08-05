@@ -87,63 +87,67 @@ performance improvement, and next-best experiment recommendations (DOE) .
     </li>
 </ul>
 
-<h3>3. Why This Platform Matters for R&D Process </h3>
+<h3>3. Why This Platform Matters for R&D Process</h3>
 
 <p>
-Chemical engineers are trained to solve complex scientific and industrial problems—not spend the majority of their time managing fragmented data, searching literature, or performing repetitive analysis. 
-This AI-driven decision intelligence platform transforms experimental data, scientific knowledge, and engineering models into actionable insights to accelerate carbon capture R&D.
+This AI-driven decision intelligence platform integrates experimental data, scientific knowledge, machine learning, and engineering models to accelerate carbon capture R&D and support faster, data-driven engineering decisions.
 </p>
 
 <ul>
 
   <li>
-    <strong>Accelerates Carbon Capture Material Discovery:</strong>
-    Machine learning models identify relationships between material properties 
-    (surface area, pore volume, pore structure, and chemical characteristics) and CO₂ adsorption performance, reducing experimental trial-and-error and enabling faster identification of high-performance materials.
+    <strong>Accelerates Material Discovery:</strong>
+    Machine learning models predict CO₂ adsorption performance from material properties, helping researchers identify promising materials faster and reduce experimental trial-and-error.
   </li>
 
   <li>
-    <strong>Optimizes Process Conditions with AI:</strong>
-    Bayesian optimization and engineering analysis identify optimal operating conditions 
-    such as temperature, pressure, and flow parameters to improve CO₂ capture efficiency while reducing experimental costs.
+    <strong>Improves Process Optimization:</strong>
+    Bayesian optimization identifies optimal operating conditions such as temperature and pressure, enabling engineers to improve capture performance while reducing testing requirements.
   </li>
 
   <li>
-    <strong>Transforms Experimental Data into Engineering Knowledge:</strong>
-    Automated ETL pipelines, structured databases, and interactive dashboards convert scattered laboratory data into reliable datasets that researchers can continuously analyze and expand.
+    <strong>Transforms Experimental Data into Insights:</strong>
+    ETL pipelines, databases, and dashboards organize fragmented laboratory data, allowing researchers to focus on engineering analysis rather than manual data processing.
   </li>
 
   <li>
-    <strong>Provides Explainable AI-Based Engineering Decisions:</strong>
-    LLM reasoning, feature importance analysis, and uncertainty evaluation explain model predictions and reveal the key factors controlling material and process performance.
+    <strong>Provides Explainable Engineering Decisions:</strong>
+    LLM reasoning and ML interpretation explain model predictions, identify key performance factors, and increase confidence in AI-assisted decisions.
   </li>
 
   <li>
-    <strong>Connects Scientific Literature with Experimental Research:</strong>
-    ChemInsight AI (RAG-based scientific assistant) retrieves knowledge from research papers, technical reports, and SOPs, allowing engineers to integrate existing scientific discoveries with their own experimental results.
+    <strong>Connects Research Knowledge with Experiments:</strong>
+    RAG-based scientific retrieval integrates literature insights with experimental results, helping researchers leverage existing knowledge and accelerate innovation.
   </li>
 
   <li>
-    <strong>Reduces Experimental Time and Resources:</strong>
-    AI-guided Design of Experiments (DOE) identifies high-value experiments before laboratory testing, minimizing unnecessary trials, material consumption, and development costs.
+    <strong>Reduces Experimental Cost and Development Time:</strong>
+    AI-guided Design of Experiments (DOE) recommends high-value experiments, minimizing unnecessary laboratory testing and resource consumption.
   </li>
 
   <li>
-    <strong>Bridges Laboratory Research and Industrial Scale-Up:</strong>
-    By combining experimental data, machine learning, optimization algorithms, and engineering models, the platform supports the transition from material discovery to practical carbon capture process development.
+    <strong>Supports Scale-Up and Industrial Deployment:</strong>
+    Combines AI predictions, optimization, and engineering analysis to bridge laboratory discoveries with practical carbon capture process development.
   </li>
 
   <li>
-    <strong>Creates an Intelligent Engineering Assistant:</strong>
-    Multi-agent AI systems collaborate as a virtual engineering team, combining data analysis, scientific knowledge, optimization, and process reasoning to support faster and more informed R&D decisions.
+    <strong>Provides an AI Engineering Chatbot:</strong>
+    A conversational AI interface allows researchers to ask technical questions, explore experimental trends, understand model results, review optimization recommendations, and receive engineering guidance through natural language interaction.
+  </li>
+
+  <li>
+    <strong>Creates an Intelligent Multi-Agent Research Assistant:</strong>
+    Multi-agent AI systems act as a virtual engineering team, combining data analysis, scientific reasoning, and optimization to provide faster and more informed R&D decisions.
   </li>
 
 </ul>
 
-<p>
-<strong>Overall Impact:</strong>  
-This platform enables chemical engineers and researchers to move from data-intensive workflows toward AI-assisted engineering innovation—accelerating R&D cycles, improving decision confidence, reducing experimental costs, and supporting the development of scalable carbon capture technologies.
+<h3 align="center">AI-Driven Engineering Decision Intelligence Platform</h3>
+
+<p align="center">
+    <img src="images/8.png" width="900" alt="AI-Driven Engineering Decision Intelligence Platform Overview">
 </p>
+<hr>
 
 <h2>4. Deployment & Interactive Streamlit Application</h2>
 
@@ -172,7 +176,7 @@ The platform is deployed as an interactive <strong>Streamlit</strong> applicatio
 The application is currently being prepared for deployment on <strong>Streamlit Community Cloud</strong> for browser-based access.
 </p>
 
-<h3 align="center"> Streamlit Application Overview</h3>
+<h3 align="center">Streamlit Application Overview</h3>
 
 <p align="center">
     <img src="images/3.png" width="900" alt="Streamlit Application Overview">
