@@ -61,12 +61,12 @@ into actionable engineering insights for material discovery, process optimizatio
 performance improvement, and next-best experiment recommendations (DOE) .
 </p>
 
-<strong>AI-Driven Multi-Agent System Development:</strong>
-A ReAct-based multi-agent framework was developed using LangChain orchestration, where specialized
-agents collaborate to analyze experimental data, interpret ML predictions, retrieve scientific knowledge,
-evaluate optimization results, and provide engineering recommendations. The system incorporates
-agent role specialization, tool calling, contextual reasoning, RAG integration, and engineering prompt
-design to improve reliability, explainability, and decision-making for carbon capture R&amp;D.
+<p>
+<strong>Multi-Agent AI Decision System:</strong>
+A ReAct-based multi-agent framework was developed using LangChain orchestration, enabling specialized
+agents to collaborate through tool integration, engineering prompts, RAG knowledge retrieval, and
+context-aware reasoning. The system improves R&amp;D decision-making by combining data analysis,
+ML interpretation, scientific knowledge, and optimization results into reliable engineering recommendations.
 </p>
 
 <h3>2.Key Engineering Questions</h3>
