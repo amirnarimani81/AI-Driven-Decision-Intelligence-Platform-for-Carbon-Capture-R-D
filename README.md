@@ -1002,32 +1002,55 @@ The multi-agent architecture solves this challenge by assigning different engine
 specialized AI agents and combining their outputs into a final decision workflow.
 </p>
 
-<h2>Benefits of Multi-Agent Engineering Intelligence</h2>
 
-<ul>
-    <li>
-        <strong>Decision Support Beyond Prediction:</strong>
-        Transforms numerical ML outputs into engineering recommendations and future actions.
-    </li>
-    <li>
-        <strong>Knowledge Integration:</strong>
-        Combines experimental databases, ML models, RAG-based scientific knowledge,
-        optimization algorithms, and engineering calculations.
-    </li>
-    <li>
-        <strong>Reduced Experimental Trial-and-Error:</strong>
-        Identifies high-value experiments using prediction uncertainty, optimization results,
-        and engineering constraints.
-    </li>
-    <li>
-        <strong>Engineering-Level Reasoning:</strong>
-        Uses LLM reasoning to interpret results based on chemical engineering principles.
-    </li>
-</ul>
 
 <h2>Multi-Agent Architecture</h2>
-
+                                  USER
+                                    │
+                                    ▼
+                         Streamlit Web Interface
+                                    │
+                                    ▼
+                         User Query / Experiment
+                                    │
+                                    ▼
+                    Multi-Agent Orchestrator (ReAct)
+             LangChain Agent + ChatOpenAI + AgentExecutor
+                                    │
+        ────────────────────────────┼────────────────────────────
+        │                           │                           │
+        ▼                           ▼                           ▼
+ Tool Calling                Reasoning Engine             Agent Memory
+ (LangChain Tools)            (LLM Planner)              Tool Registry
+        │                           │                           │
+        │                           │                           │
+ ┌──────┼──────────┬──────────┬─────┴─────┬───────────────┐
+ ▼      ▼          ▼          ▼           ▼               ▼
+EDA   Prediction  Optimization  Reactor  Scientific RAG  Database
+Tool    Tool       Tool          Tool      Tool          Tool
+ │        │           │            │          │             │
+ │        │           │            │          │             │
+ ▼        ▼           ▼            ▼          ▼             ▼
+SQLite  ML Model  Bayesian     Engineering  FAISS      Experiment
+Dataset XGBoost  Optimization  Simulation  Vector DB    Storage
+                         │
+                         ▼
+                 Decision Engine (LLM)
+                         │
+         ┌───────────────┼────────────────┐
+         ▼               ▼                ▼
+ Root Cause       Risk Assessment     Next Experiment
+                         │
+                         ▼
+             DOE Generator (LLM Planning)
+                         │
+                         ▼
+          Industrial Decision Intelligence
+                         │
+                         ▼
+      PDF Report + Dashboard + Chat Response
 <ul>
+    
     <li>
         <strong>Data Intelligence Agent:</strong>
         Retrieves experimental data and performs statistical analysis.
