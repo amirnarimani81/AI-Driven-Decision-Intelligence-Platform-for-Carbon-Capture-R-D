@@ -158,7 +158,7 @@ The application is currently being prepared for deployment on <strong>Streamlit 
 <h3 align="center"> Streamlit Application Overview</h3>
 
 <p align="center">
-    <img src="images/3.png.png" width="900" alt="Streamlit Application Overview">
+    <img src="images/3.png" width="900" alt="Streamlit Application Overview">
 </p>
 
 <hr>
@@ -269,17 +269,17 @@ I   Dashboards (Power BI & Streamlit)
 <h3 align="center"> LLM Interpretation Results</h3>
 
 <p align="center">
-    <img src="images/12_1.png" width="30%" alt="LLM Result 1">
-    <img src="images/12_2.png" width="30%" alt="LLM Result 2">
-    <img src="images/12_3.png" width="30%" alt="LLM Result 3">
+    <img src="images/12.1.png" width="30%" alt="LLM Result 1">
+    <img src="images/12.2.png" width="30%" alt="LLM Result 2">
+    <img src="images/12.3.png" width="30%" alt="LLM Result 3">
 </p>
 
 <h3 align="center"> Multi-Agent System for Design of Experiments (DOE)</h3>
 
 <p align="center">
-    <img src="images/13_1.png" width="30%" alt="Multi-Agent  Result 1">
-    <img src="images/13_2.png" width="30%" alt="Multi-Agent  Result 2">
-    <img src="images/13_3.png" width="30%" alt="Multi-Agent  Result 3">
+    <img src="images/13.1.png" width="30%" alt="Multi-Agent  Result 1">
+    <img src="images/13.2.png" width="30%" alt="Multi-Agent  Result 2">
+    <img src="images/13.3.png" width="30%" alt="Multi-Agent  Result 3">
 </p>
 
 <hr>
@@ -315,9 +315,17 @@ client = OpenAI(
 
 <p align="center">
     <a href="https://youtu.be/3aY6nBX6ZKM" target="_blank">
-        <img src="https://img.youtube.com/vi/3aY6nBX6ZKM/maxresdefault.jpg" 
-             width="900" 
+        <img src="https://img.youtube.com/vi/3aY6nBX6ZKM/maxresdefault.jpg"
+             width="900"
              alt="Data Engineering Demonstration">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://youtu.be/3aY6nBX6ZKM" target="_blank">
+        <button>
+            ▶ Watch Data Engineering Demo Video
+        </button>
     </a>
 </p>
 
@@ -366,8 +374,7 @@ cleaned_df = etl_pipeline(
     df,
     target_column='CO2 uptake (mmol/g)',
     missing_strategy="mean",
-    remove_cols=["gamma", "world"]
-)
+    remove_cols=["gamma", "world"])
 </pre>
 
 <h3>7.2.2. Engineering Data Query & Analysis</h3>
@@ -415,15 +422,13 @@ LIMIT 10;
 from sqlalchemy import create_engine
 
 engine = create_engine(
-    "sqlite:///carbon_capture.db"
-)
+    "sqlite:///carbon_capture.db")
 
 df.to_sql(
     "experiments",
     engine,
     if_exists="replace",
-    index=False
-)
+    index=False)
 </pre>
 
 <h3>7.2.3. Streamlit–SQLite Integration</h3>
@@ -461,7 +466,7 @@ def load_database():
 <h3 align="center">Streamlit–SQLite Database Integration</h3>
 
 <p align="center">
-    <img src="images/10.png.png" width="900" alt="Streamlit SQLite Database Integration">
+    <img src="images/10.png" width="900" alt="Streamlit SQLite Database Integration">
 </p>
 
 <h4>Technical Advantages</h4>
@@ -493,11 +498,18 @@ def load_database():
 
 <p align="center">
     <a href="https://youtu.be/ZD384ylmRS4" target="_blank">
-        <img src="https://img.youtube.com/vi/ZD384ylmRS4/maxresdefault.jpg" 
-             width="900" 
+        <img src="https://img.youtube.com/vi/ZD384ylmRS4/maxresdefault.jpg"
+             width="900"
              alt="Machine Learning Prediction Demonstration">
     </a>
 </p>
+
+<p align="center">
+    <a href="https://youtu.be/ZD384ylmRS4" target="_blank">
+        ▶ Watch Machine Learning Prediction Demo
+    </a>
+</p>
+
 <p>
 This module integrates machine learning models into the Streamlit platform to predict CO₂ uptake
 performance based on material properties and operating conditions. The objective is to replace
@@ -548,7 +560,7 @@ experimental results in the SQLite database.
 <h3 align="center">CO₂ Uptake Prediction & New Experimental Data Entry</h3>
 
 <p align="center">
-    <img src="images/9.png.png" width="900" alt="CO2 Uptake Prediction and New Data Entry">
+    <img src="images/9.png" width="900" alt="CO2 Uptake Prediction and New Data Entry">
 </p>
 
 <h4>Technical Advantages</h4>
@@ -582,6 +594,7 @@ please refer to the ML CO₂ Prediction module in the corresponding repository f
 <hr>
 
 <h2>7.4. Process Optimization & Scale-Up Assessment</h2>
+
 <p align="center">
     <a href="https://youtu.be/OcEckD-TYeM" target="_blank">
         <img src="https://img.youtube.com/vi/OcEckD-TYeM/maxresdefault.jpg"
@@ -589,6 +602,14 @@ please refer to the ML CO₂ Prediction module in the corresponding repository f
              alt="Process Optimization and Scale-Up Demonstration">
     </a>
 </p>
+
+<p align="center">
+    <a href="https://youtu.be/OcEckD-TYeM" target="_blank">
+        ▶ Watch Process Optimization & Scale-Up Demo
+    </a>
+</p>
+
+
 <p>
 This Streamlit module extends the platform from prediction to engineering decision support by integrating
 machine learning models, optimization algorithms, uncertainty analysis, and engineering intelligence.
@@ -659,12 +680,17 @@ CO₂ capture research and process development.
 <hr>
 
 <h3>7.5. Scientific Knowledge Integration Using RAG (ChemInsight AI)</h3>
+<p align="center">
+    <a href="https://youtu.be/cjApeyFeX0g" target="_blank">
+        <img src="https://img.youtube.com/vi/cjApeyFeX0g/maxresdefault.jpg"
+             width="900"
+             alt="ChemInsight AI Demonstration">
+    </a>
+</p>
 
 <p align="center">
     <a href="https://youtu.be/cjApeyFeX0g" target="_blank">
-        <img src="https://img.youtube.com/vi/cjApeyFeX0g/maxresdefault.jpg" 
-             width="900" 
-             alt="ChemInsight AI Demonstration">
+        ▶ Watch ChemInsight AI Demo
     </a>
 </p>
 
@@ -772,6 +798,12 @@ Scientific Insights & Engineering Answers
         <img src="https://img.youtube.com/vi/2d4F-jbgX9E/maxresdefault.jpg"
              width="900"
              alt="LLM Engineering Interpretation Demonstration">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://youtu.be/2d4F-jbgX9E" target="_blank">
+        ▶ Watch LLM Engineering Interpretation Demo
     </a>
 </p>
 
@@ -915,9 +947,9 @@ Rules:
 <h3 align="center">LLM Interpretation Results</h3>
 
 <p align="center">
-    <img src="images/12_1.png" width="30%" alt="LLM Result 1">
-    <img src="images/12_2.png" width="30%" alt="LLM Result 2">
-    <img src="images/12_3.png" width="30%" alt="LLM Result 3">
+    <img src="images/12.1.png" width="30%" alt="LLM Result 1">
+    <img src="images/12.2.png" width="30%" alt="LLM Result 2">
+    <img src="images/12.3.png" width="30%" alt="LLM Result 3">
 </p>
 
 <hr>
@@ -930,6 +962,13 @@ Rules:
              width="900"
              alt="Multi-Agent AI Decision Intelligence Demonstration">
     </a>
+</p>
+
+<p align="center">
+    <a href="https://youtu.be/YAbMhKLr5-4" target="_blank">
+        ▶ Watch Multi-Agent AI Decision Intelligence Demo
+    </a>
+</p>
 </p>
 <p>
 This layer represents the intelligence core of the platform. The objective was to move beyond
@@ -1078,12 +1117,10 @@ Rules:
 agent = create_react_agent(
     llm,
     tools,
-    prompt=CHEMICAL_ENGINEERING_PROMPT
-)
+    prompt=CHEMICAL_ENGINEERING_PROMPT)
 
 result = agent_executor.invoke({
-    "input": engineering_question
-})
+    "input": engineering_question})
 </code>
 </pre>
 
@@ -1123,9 +1160,9 @@ def next_experiment_suggestion(
 <h3 align="center">Multi-Agent AI System Results</h3>
 
 <p align="center">
-    <img src="images/13_1.png" width="30%" alt="Multi-Agent  Result 1">
-    <img src="images/13_2.png" width="30%" alt="Multi-Agent  Result 2">
-    <img src="images/13_3.png" width="30%" alt="Multi-Agent  Result 3">
+    <img src="images/13.1.png" width="30%" alt="Multi-Agent  Result 1">
+    <img src="images/13.2.png" width="30%" alt="Multi-Agent  Result 2">
+    <img src="images/13.3.png" width="30%" alt="Multi-Agent  Result 3">
 </p>
 
 <h2>AI Engineering Chatbot</h2>
