@@ -88,61 +88,53 @@ performance improvement, and next-best experiment recommendations (DOE) .
 </ul>
 
 <h3>3. Why This Platform Matters for R&D Process</h3>
-
 <p>
-This AI-driven decision intelligence platform integrates experimental data, scientific knowledge, machine learning, and engineering models to accelerate carbon capture R&D and support faster, data-driven engineering decisions.
+This AI-driven decision intelligence platform combines experimental data, machine learning, scientific knowledge retrieval (RAG), LLM-based interpretation, engineering prompts, tool-augmented agents, LangChain orchestration, and engineering models to accelerate carbon capture R&D and enable faster, explainable engineering decisions.
 </p>
 
 <ul>
 
   <li>
     <strong>Accelerates Material Discovery:</strong>
-    Machine learning models predict CO₂ adsorption performance from material properties, helping researchers identify promising materials faster and reduce experimental trial-and-error.
+    Predicts CO₂ adsorption performance from material properties, reducing trial-and-error experiments.
   </li>
 
   <li>
-    <strong>Improves Process Optimization:</strong>
-    Bayesian optimization identifies optimal operating conditions such as temperature and pressure, enabling engineers to improve capture performance while reducing testing requirements.
+    <strong>Optimizes Process Conditions:</strong>
+    Uses Bayesian optimization to identify optimal temperature, pressure, and operating conditions.
   </li>
 
   <li>
-    <strong>Transforms Experimental Data into Insights:</strong>
-    ETL pipelines, databases, and dashboards organize fragmented laboratory data, allowing researchers to focus on engineering analysis rather than manual data processing.
+    <strong>Transforms Data into Engineering Insights:</strong>
+    Organizes experimental data through ETL pipelines, databases, and dashboards for efficient analysis.
   </li>
 
   <li>
-    <strong>Provides Explainable Engineering Decisions:</strong>
-    LLM reasoning and ML interpretation explain model predictions, identify key performance factors, and increase confidence in AI-assisted decisions.
+    <strong>Enables Explainable AI:</strong>
+    Interprets ML predictions and identifies key factors influencing material and process performance.
   </li>
 
   <li>
-    <strong>Connects Research Knowledge with Experiments:</strong>
-    RAG-based scientific retrieval integrates literature insights with experimental results, helping researchers leverage existing knowledge and accelerate innovation.
+    <strong>Integrates Scientific Knowledge:</strong>
+    RAG-based retrieval connects research literature with experimental results to accelerate innovation.
   </li>
 
   <li>
-    <strong>Reduces Experimental Cost and Development Time:</strong>
-    AI-guided Design of Experiments (DOE) recommends high-value experiments, minimizing unnecessary laboratory testing and resource consumption.
+    <strong>Reduces R&D Time and Cost:</strong>
+    AI-guided DOE recommends valuable experiments and minimizes unnecessary testing.
   </li>
 
   <li>
-    <strong>Supports Scale-Up and Industrial Deployment:</strong>
-    Combines AI predictions, optimization, and engineering analysis to bridge laboratory discoveries with practical carbon capture process development.
+    <strong>Supports Scale-Up Decisions:</strong>
+    Combines AI and engineering analysis to bridge laboratory research with industrial applications.
   </li>
 
   <li>
-    <strong>Provides an AI Engineering Chatbot:</strong>
-    A conversational AI interface allows researchers to ask technical questions, explore experimental trends, understand model results, review optimization recommendations, and receive engineering guidance through natural language interaction.
-  </li>
-
-  <li>
-    <strong>Creates an Intelligent Multi-Agent Research Assistant:</strong>
-    Multi-agent AI systems act as a virtual engineering team, combining data analysis, scientific reasoning, and optimization to provide faster and more informed R&D decisions.
+    <strong>Provides Intelligent AI Assistance:</strong>
+    Chatbot and multi-agent AI systems support researchers with technical analysis, recommendations, and faster R&D decisions.
   </li>
 
 </ul>
-
-<h3 align="center">AI-Driven Engineering Decision Intelligence Platform</h3>
 
 <p align="center">
     <img src="images/8.png" width="900" alt="AI-Driven Engineering Decision Intelligence Platform Overview">
