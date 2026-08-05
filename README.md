@@ -1084,82 +1084,73 @@ Dataset XGBoost  Optimization  Simulation  Vector DB    Storage
       PDF Report + Dashboard + Chat Response
 </pre>
 
+<h3>For Example: Chemical Engineering AI Agent Implementation</h3>
 
-<h3> For Example: Chemical Engineering AI Agent Implementation</h3>
 <pre>
 <code>
-# Engineering Tools Available to the Agent
+# Available Engineering Tools
+
 tools = [
-  ML_Prediction_Tool(
-        description=
-        "Predict CO₂ uptake performance using trained machine learning models"),
+    ML_Prediction_Tool(
+        "Predict CO₂ uptake using trained ML models"),
 
     Optimization_Tool(
-        description=
-        "Identify optimal temperature, pressure, and process conditions using Bayesian optimization"),
+        "Identify optimal temperature and pressure using Bayesian optimization"),
 
     Data_Analysis_Tool(
-        description=
-        "Analyze experimental datasets, trends, correlations, and anomalies"),
+        "Analyze experimental trends and detect anomalies"),
 
     RAG_Literature_Tool(
-        description=
-        "Retrieve scientific information from CO₂ capture papers and technical documents"),
+        "Retrieve CO₂ capture knowledge from scientific documents")
+]
+
 
 # Chemical Engineering Agent Prompt
 
 CHEMICAL_ENGINEERING_AGENT_PROMPT = """
 
-You are a Senior Chemical Engineering AI Agent specialized in
-CO₂ capture and adsorption process development.
+You are a Senior Chemical Engineering AI Agent specialized in CO₂ capture.
 
-Your expertise includes:
-- Adsorption thermodynamics and kinetics
-- Porous material characterization
-- CO₂ capture process design
-- Machine learning interpretation
-- Process optimization
-- Industrial scale-up evaluation
-
-Your responsibilities:
-
-1. Analyze experimental datasets and identify important trends.
-2. Interpret ML model predictions and explain performance drivers.
-3. Retrieve scientific knowledge when additional information is required.
-4. Recommend optimal operating conditions.
-5. Suggest next experiments using DOE principles.
-6. Provide engineering justification for every recommendation.
+Capabilities:
+- Analyze experimental data
+- Interpret ML predictions
+- Retrieve scientific knowledge
+- Optimize process conditions
+- Recommend DOE experiments
 
 Rules:
-- Use chemical engineering principles.
-- Avoid unsupported assumptions.
-- Provide quantitative recommendations when possible.
-- Explain the reason behind each decision.
+- Apply chemical engineering principles
+- Provide quantitative recommendations
+- Explain engineering reasoning
 
 """
-# Create ReAct Agent using LangChain
+
+
+# ReAct LangChain Agent
 
 agent = create_react_agent(
-    llm=llm,
-    tools=tools,
-    prompt=CHEMICAL_ENGINEERING_AGENT_PROMPT)
+    llm,
+    tools,
+    prompt=CHEMICAL_ENGINEERING_AGENT_PROMPT
+)
 
 agent_executor = AgentExecutor(
     agent=agent,
-    tools=tools,
-    verbose=True)
+    tools=tools
+)
 
-# User Engineering Question
+
+# Engineering Query
 
 result = agent_executor.invoke({
 "input":
 """
-A new porous material shows high surface area but moderate CO₂ uptake.
-Analyze possible reasons and recommend the next experiments.
-"""})
+A porous material shows high surface area but moderate CO₂ uptake.
+Analyze possible causes and recommend next experiments.
+"""
+})
 </code>
 </pre>
-
 
 <h3> For example: AI-Driven DOE Experiment Recommendation Agent</h3>
 
