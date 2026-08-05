@@ -878,9 +878,7 @@ payload = {
     "ModelMetrics": {
         "R2": r2,
         "RMSE": rmse,
-        "MAE": mae
-    }
-}
+        "MAE": mae}}
 
 # Send structured engineering context to LLM
 report = call_llm(provider="gpt", prompt=build_prompt(payload))
@@ -1003,7 +1001,7 @@ specialized AI agents and combining their outputs into a final decision workflow
 </p>
 
 
-
+<pre)
 <h2>Multi-Agent Architecture</h2>
                                   USER
                                     │
@@ -1049,45 +1047,7 @@ Dataset XGBoost  Optimization  Simulation  Vector DB    Storage
                          │
                          ▼
       PDF Report + Dashboard + Chat Response
-<ul>
-    
-    <li>
-        <strong>Data Intelligence Agent:</strong>
-        Retrieves experimental data and performs statistical analysis.
-    </li>
-    <li>
-        <strong>Machine Learning Agent:</strong>
-        Predicts CO₂ uptake and evaluates model performance.
-    </li>
-    <li>
-        <strong>Material Intelligence Agent:</strong>
-        Analyzes material properties and adsorption behavior.
-    </li>
-    <li>
-        <strong>Process Optimization Agent:</strong>
-        Searches optimal conditions using sensitivity analysis and Bayesian optimization.
-    </li>
-    <li>
-        <strong>Scientific Knowledge Agent (RAG):</strong>
-        Retrieves scientific evidence and connects literature with experimental results.
-    </li>
-    <li>
-        <strong>Risk & Uncertainty Agent:</strong>
-        Evaluates prediction confidence and reliability.
-    </li>
-    <li>
-        <strong>DOE Experiment Design Agent:</strong>
-        Generates next-best experiments using optimization and uncertainty analysis.
-    </li>
-    <li>
-        <strong>Scale-Up Intelligence Agent:</strong>
-        Evaluates industrial feasibility using engineering calculations.
-    </li>
-    <li>
-        <strong>Decision Supervisor Agent:</strong>
-        Combines all agent outputs and generates final recommendations.
-    </li>
-</ul>
+</pre>
 
 <h2>AI-Driven Experimental Design and Optimization</h2>
 
