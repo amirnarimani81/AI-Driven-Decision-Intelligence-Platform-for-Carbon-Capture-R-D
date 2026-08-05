@@ -174,6 +174,11 @@ The application is currently being prepared for deployment on <strong>Streamlit 
     <img src="images/3.png" width="900" alt="Streamlit Application Overview">
 </p>
 
+<li>
+    <strong>Streamlit Deployment:</strong>
+    Refer to the <em>Streamlit Deployment & Application,  Pages/Back end </em> section for interactive dashboards, database integration, and platform deployment.
+  </li>
+
 <hr>
 
 <h2>5.System Architecture</h2>
@@ -505,6 +510,11 @@ def load_database():
     </li>
 </ul>
 
+  <li>
+    <strong>Database Integration:</strong>
+    Refer to the <em>Database Management & SQLAlchemy Integration</em> section for experimental data storage, retrieval, validation, and SQLite database connectivity.
+  </li>
+
 <hr>
 
 <h2>7.3. Machine Learning Model Development & Prediction</h2>
@@ -603,7 +613,6 @@ experimental results in the SQLite database.
 For additional technical details, implementation examples, and complete source code,
 please refer to the ML CO₂ Prediction module in the corresponding repository files.
 </p>
-
 <hr>
 
 <h2>7.4. Process Optimization & Scale-Up Assessment</h2>
@@ -801,6 +810,11 @@ Scientific Insights & Engineering Answers
 <p align="center">
     <img src="images/11.png" width="900" alt="ChemInsight AI Results">
 </p>
+
+  <li>
+    <strong>ChemInsight AI:</strong>
+    Refer to the <em>ChemInsight AI (RAG-Based Scientific Assistant)</em> [section for literature retrieval, document processing, and knowledge integration.](https://github.com/amirnarimani81/ChemInsight-AI-Intelligent-Document-Analysis-Using-LLMs-and-RAG.git)
+  </li>
 
 <hr>
 
@@ -1183,6 +1197,11 @@ ML results, explain performance limitations, and recommend improvement strategie
 <p align="center">
     <img src="images/14.png" width="900" alt="AI Chatbot Interface">
 </p>
+
+  <li>
+    <strong>Multi-Agent AI System:</strong>
+    Refer to the <em>AI-Driven Decision Intelligence System</em> section for agent architecture, LangChain orchestration, tool integration, and engineering decision support.
+  </li>
 
 <hr>
 
