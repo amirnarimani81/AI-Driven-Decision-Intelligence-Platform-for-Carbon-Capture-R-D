@@ -15,15 +15,17 @@
 <hr>
 
 <p align="center">
-    <a href="https://youtu.be/" target="_blank">
-        <img src="https://img.youtube.com/vi//maxresdefault.jpg" width="900" alt="Project Demo">
-    </a>
+  <a href="https://youtu.be/8y_MD7KHeMQ" target="_blank">
+    <img src="https://img.youtube.com/vi/8y_MD7KHeMQ/maxresdefault.jpg"
+         width="900"
+         alt="AI-Driven Decision Intelligence Platform Demo">
+  </a>
 </p>
 
 <p align="center">
-    <a href="https://youtu/" target="_blank">
-        <img src="assets/demo_thumbnail.png" width="900" alt="Project Demonstration">
-    </a>
+  ▶️ <a href="https://youtu.be/8y_MD7KHeMQ" target="_blank">
+    Watch the Project Demonstration
+  </a>
 </p>
 
 <p align="center">
